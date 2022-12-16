@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommitmentUI", "CommitmentUI.csproj", "{91AE2C99-969B-422E-A1B6-17F9A1F8830D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91AE2C99-969B-422E-A1B6-17F9A1F8830D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91AE2C99-969B-422E-A1B6-17F9A1F8830D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91AE2C99-969B-422E-A1B6-17F9A1F8830D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91AE2C99-969B-422E-A1B6-17F9A1F8830D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {33535210-A647-4283-947B-6264E2F2D957}
+	EndGlobalSection
+EndGlobal

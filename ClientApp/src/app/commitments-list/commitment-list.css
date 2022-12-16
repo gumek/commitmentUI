@@ -1,0 +1,18 @@
+.green {
+  background-color: green;
+}
+
+.red {
+  background-color: #cc0000;
+}
+
+.yellow {
+  background-color: #e5e500;
+}
+
+.mat-mdc-raised-button {
+  margin-left: 10px;
+  height: 55px !important;
+  width: 60px !important;
+  margin-bottom: 20px;
+}

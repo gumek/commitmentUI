@@ -1,0 +1,24 @@
+<h1 id="tableLabel">List of answers</h1>
+
+<p>You can view all the answers here.</p>
+
+<p *ngIf="!commitments?.length"><em>Loading...</em></p>
+
+<table class='table table-striped' aria-labelledby="tableLabel" *ngIf="commitments.length">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Answer</th>
+      <th>Status</th>
+      <th>User</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let commitment of commitments">
+      <td>{{ commitment.title }}</td>
+      <td>{{ commitment.answer }}</td>
+      <td>{{ commitment.status }}</td>
+      <td>{{ commitment.userName }}</td>
+    </tr>
+  </tbody>
+</table>

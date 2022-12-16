@@ -1,0 +1,38 @@
+<h2>My commitments</h2>
+
+<p>Below you can see the list of your commitments.</p>
+<p>Please make sure you answer all due and overdue commitments!</p>
+
+<p *ngIf="!commitments?.length"><em>Loading...</em></p>
+
+<table class='table' aria-labelledby="tableLabel" *ngIf="commitments.length">
+  <tbody>
+    <mat-accordion>
+      <tr *ngFor="let commitment of commitments; trackBy:identify">
+        <mat-expansion-panel [ngClass]="{ 'yellow' : commitment.status == 'Due', 'red' : commitment.status === 'Overdue', 'green' : commitment.status === 'Completed'}">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{commitment.title}}
+            </mat-panel-title>
+            <mat-panel-description>
+              {{commitment.description}}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <mat-form-field appearance="fill" [style.width.px]=400 >
+            <mat-label>Answer</mat-label>
+            <input matInput [(ngModel)]="commitment.answer">
+          </mat-form-field>
+          <button mat-raised-button (click)="sendAnswer(commitment)">
+            Send
+          </button>
+          <mat-card>
+            <mat-card-content>Deadline: {{commitment.deadline | date: 'yyyy-MM-dd hh:mm'}}</mat-card-content>
+          </mat-card>
+          <mat-card>
+            <mat-card-content>Status: {{commitment.status}}</mat-card-content>
+          </mat-card>
+        </mat-expansion-panel>
+      </tr>
+    </mat-accordion>
+  </tbody>
+</table>

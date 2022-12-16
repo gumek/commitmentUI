@@ -1,0 +1,13 @@
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.templateDeadline, .templateTitle, .templateDescription {
+  width: 1000px;
+}
+
+.template-card {
+  width: 1030px;
+}
